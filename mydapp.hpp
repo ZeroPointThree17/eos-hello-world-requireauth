@@ -2,10 +2,17 @@
 #include <eoslib/eos.hpp>
 
 /* @abi action change
- * @abi table
 */
 struct key_value {
    account_name from;
+   eosio::string key;
+   time value;
+};
+
+/*
+ * @abi table
+*/
+struct to_db {
    eosio::string key;
    time value;
 };

@@ -8,6 +8,14 @@
         "key": "string",
         "value": "time"
       }
+    },
+    {
+      "name": "to_db",
+      "base": "",
+      "fields": {
+        "key": "string",
+        "value": "time"
+      }
     }
   ],
   "actions": [{
@@ -24,7 +32,7 @@
       "key_types": [
         "string"
       ],
-      "type": "key_value"
+      "type": "to_db"
     }
   ]
 }

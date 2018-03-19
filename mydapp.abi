@@ -1,0 +1,30 @@
+{
+  "types": [],
+  "structs": [{
+      "name": "key_value",
+      "base": "",
+      "fields": {
+        "from": "account_name",
+        "key": "string",
+        "value": "time"
+      }
+    }
+  ],
+  "actions": [{
+      "action_name": "change",
+      "type": "key_value"
+    }
+  ],
+  "tables": [{
+      "table_name": "keyvalue",
+      "index_type": "str",
+      "key_names": [
+        "key"
+      ],
+      "key_types": [
+        "string"
+      ],
+      "type": "key_value"
+    }
+  ]
+}

@@ -10,7 +10,7 @@
       }
     },
     {
-      "name": "to_db",
+      "name": "dbname",
       "base": "",
       "fields": {
         "key": "string",
@@ -32,7 +32,7 @@
       "key_types": [
         "string"
       ],
-      "type": "to_db"
+      "type": "dbname"
     }
   ]
 }

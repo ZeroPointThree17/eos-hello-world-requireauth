@@ -17,11 +17,10 @@ extern "C" {
             
             auto kv1 = eosio::current_message<key_value>();
             eosio::require_auth( kv1.from );
-            to_db db_vals;
-            db_vals.key = kv1.key;
-            db_vals.value = kv1.value;
-            bytes b = eosio::raw::pack(db_vals.value);
-            uint32_t err = store_str( N(hellowrld3), N(todb), (char *)db_vals.key.get_data(), db_vals.key.get_size(), (char*)b.data, b.len);
+
+            bytes b = eosio::raw::pack(kv1.value);
+
+            uint32_t err = store_str( N(hellowrld3), N(dbname), (char*)kv1.key.get_data(), kv1.key.get_size(), (char*)b.data, b.len);
 
          } else {
             assert(0, "unknown message");

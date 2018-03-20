@@ -12,7 +12,7 @@ struct key_value {
 /*
  * @abi table
 */
-struct to_db {
+struct dbname {
    eosio::string key;
    time value;
 };
